@@ -53,3 +53,19 @@ def route_b():
 """
     rendered = flask.render_template_string(ok_lets_make_it_different_template)
 
+@app.route("/route_z")
+def route_z():
+    template = """
+{  extends "layout.html"  }
+{  block body  }
+    <div class="center-content error">
+        <h1>Oops! That page doesn't exist.</h1>
+        <h3>
+"""
+    template += request.url
+    template += """
+</h3>
+</div>
+{  endblock  }
+"""
+    rendered = flask.render_template_string(template)
