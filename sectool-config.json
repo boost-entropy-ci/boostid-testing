@@ -1,0 +1,9 @@
+{
+  "violation-policy": [
+    {
+      "rules": {
+        "server-side-template-injection": "alert"
+      }
+    }
+  ]
+}
