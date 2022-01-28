@@ -2,7 +2,8 @@
   "violation-policy": [
     {
       "rules": {
-        "not-server-side-template-injection": "alert"
+        "not-server-side-template-injection": "alert",
+	"dynamic-code-injection": "alert"
       }
     }
   ]
